@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #172033;
+}
+
+.app {
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: auto;
+    padding: 25px 20px 100px;
+    background: white;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.small-text {
+    color: #718096;
+    font-size: 14px;
+}
+
+.app-header h1 {
+    font-size: 27px;
+    margin-top: 4px;
+}
+
+.profile-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+.intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.programme-list {
+    display: grid;
+    gap: 14px;
+}
+
+.programme-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px;
+    border: 1px solid #dbe2ea;
+    border-radius: 16px;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.programme-card:hover {
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+.programme-icon {
+    font-size: 28px;
+}
+
+.programme-card strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.programme-card small {
+    color: #64748b;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 22px;
+}
+
+.course-section {
+    margin-top: 20px;
+}
+
+.back-button {
+    border: none;
+    background: #e2e8f0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    background: white;
+    border-top: 1px solid #dbe2ea;
+}
+
+.nav-item {
+    border: none;
+    background: transparent;
+    color: #94a3b8;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: #2563eb;
+}

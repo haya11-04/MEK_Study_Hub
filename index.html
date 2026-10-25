@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MEK Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="app-header">
+            <div>
+                <p class="small-text">Welcome to</p>
+                <h1>MEK Study Hub</h1>
+            </div>
+
+            <div class="profile-icon">MEK</div>
+        </header>
+
+        <section class="intro">
+            <h2>Choose your engineering programme</h2>
+            <p>
+                Explore courses, watch learning videos and test your
+                knowledge with flashcards and quizzes.
+            </p>
+        </section>
+
+        <section class="programme-list">
+
+            <button class="programme-card" data-programme="electronics">
+                <span class="programme-icon">⚡</span>
+
+                <span>
+                    <strong>Electronics Engineering</strong>
+                    <small>Circuits, programming and automation</small>
+                </span>
+
+                <span class="arrow">›</span>
+            </button>
+
+            <button class="programme-card" data-programme="mechanical">
+                <span class="programme-icon">⚙️</span>
+
+                <span>
+                    <strong>Mechanical Engineering</strong>
+                    <small>Mechanics, materials and design</small>
+                </span>
+
+                <span class="arrow">›</span>
+            </button>
+
+            <button class="programme-card" data-programme="chemical">
+                <span class="programme-icon">🧪</span>
+
+                <span>
+                    <strong>Chemical Engineering</strong>
+                    <small>Chemistry, processes and sustainability</small>
+                </span>
+
+                <span class="arrow">›</span>
+            </button>
+
+        </section>
+
+        <section id="course-section" class="course-section hidden">
+            <button id="back-button" class="back-button">← Back</button>
+
+            <h2 id="programme-title"></h2>
+            <p id="programme-description"></p>
+
+            <div id="course-list"></div>
+        </section>
+
+        <nav class="bottom-navigation">
+            <button class="nav-item active">
+                <span>⌂</span>
+                <small>Home</small>
+            </button>
+
+            <button class="nav-item">
+                <span>▣</span>
+                <small>Courses</small>
+            </button>
+
+            <button class="nav-item">
+                <span>★</span>
+                <small>Progress</small>
+            </button>
+        </nav>
+
+    </main>
+
+</body>
+</html>
